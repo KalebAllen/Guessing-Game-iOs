@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GUessingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Your Guess Here  " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QUw-QX-9oY">
+                                <rect key="frame" x="70" y="292" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number is to HIgh  or to Low" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XTu-W6-qtP">
+                                <rect key="frame" x="70" y="40" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of guess left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hj-Vh-Wzb">
+                                <rect key="frame" x="70" y="171" width="225" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRg-m1-T8Z">
+                                <rect key="frame" x="70" y="392" width="225" height="49"/>
+                                <state key="normal" title="Guess"/>
+                                <connections>
+                                    <action selector="SummitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfa-iA-W63"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Hj-Vh-Wzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="5fi-EU-N4e"/>
+                            <constraint firstItem="XTu-W6-qtP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="AxG-El-57x"/>
+                            <constraint firstItem="4Hj-Vh-Wzb" firstAttribute="top" secondItem="XTu-W6-qtP" secondAttribute="bottom" constant="110" id="CM1-hF-ebB"/>
+                            <constraint firstItem="aRg-m1-T8Z" firstAttribute="top" secondItem="QUw-QX-9oY" secondAttribute="bottom" constant="60" id="Cu7-Xt-0ka"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aRg-m1-T8Z" secondAttribute="bottom" constant="250" id="F8g-cB-kkI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Hj-Vh-Wzb" secondAttribute="trailing" constant="80" id="FBc-gJ-afg"/>
+                            <constraint firstItem="aRg-m1-T8Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="FIE-ml-S7n"/>
+                            <constraint firstItem="QUw-QX-9oY" firstAttribute="top" secondItem="4Hj-Vh-Wzb" secondAttribute="bottom" constant="100" id="R0C-hc-1nE"/>
+                            <constraint firstItem="QUw-QX-9oY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="b8O-wo-JFA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTu-W6-qtP" secondAttribute="trailing" constant="80" id="cdI-W7-Xoa"/>
+                            <constraint firstItem="XTu-W6-qtP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="f0F-mI-Cpf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aRg-m1-T8Z" secondAttribute="trailing" constant="80" id="tba-Is-Kwa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QUw-QX-9oY" secondAttribute="trailing" constant="80" id="yAe-km-Ben"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="numberOfGuess" destination="4Hj-Vh-Wzb" id="xKX-1Z-qe6"/>
+                        <outlet property="toHighToLow" destination="XTu-W6-qtP" id="r4b-Jm-Xpn"/>
+                        <outlet property="whereYouTypeGuess" destination="QUw-QX-9oY" id="aIG-g7-SFi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
